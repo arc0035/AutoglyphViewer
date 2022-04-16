@@ -1,32 +1,38 @@
-# 用法
+# AutoglyphsViewer
 
-安装：
+Autoglyphs is kind of "generative art" which generates image by smart contract on ethereum.
+
+This repository is a tool run autoglyphs in local hardhat network. Users can exploit this tool to test different seed, code, or logic, to see what images can be generated.
+
+Install：
 ```
 npm install
 ```
 
-启动节点：
+Start local node:
+
 ```
 npx hardhat compile
 npx hardhat node
 ```
 
-打开另一个终端：
+Open another terminal:
 ```
 cd client
 npm install
 npm run serve
 ```
 
-访问：
+Access the tool in browser:
+
 ```
 http://localhost:8080
 ```
 
-可以在第一个输入框输入代码，具体请参考etherscan合约中的draw方法输出。
+You can put the input, that generated from "draw" method in etherscan ,into the first textarea;
 
-也可以在第二个输入框输入seed。
+You can also put your seed into the second textarea, and the default seed is the seed that created the first autoglyphs.
 
-也可以在contracts/Autoglyph.sol中调整draw函数的逻辑，以测试不同逻辑如何生成不同的图形。
+You can even modify the contract in contracts folder to furthur investigate how these modifications affect the image.
 
 ![](./sample.png)
