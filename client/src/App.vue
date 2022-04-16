@@ -1,15 +1,15 @@
 <template>
  <div>
     <div class="input">
-      <h2>请输入draw代码(见etherscan地址0xd4e4078ca3495de5b1d4db434bebc5a986197782的draw函数)：</h2>
+      <h2>Put draw instructions(Refer to 0xd4e4078ca3495de5b1d4db434bebc5a986197782/draw in etherscan)：</h2>
       <textarea  v-model="code" /> 
-      <button @click="generateByCode">通过代码生成图形</button>
+      <button @click="generateByCode">GenByInstruction</button>
     </div>
 
     <div class="input">
-      <h2>或者输入draw种子：</h2>
+      <h2>Or put draw seed:</h2>
       <textarea  v-model="seed" /> 
-      <button @click="generateBySeed">通过种子生成图形</button>
+      <button @click="generateBySeed">GenBySeed</button>
     </div>
 
     <div class="result" v-if="computed">
