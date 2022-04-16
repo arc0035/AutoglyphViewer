@@ -29,3 +29,4 @@ http://localhost:8080
 
 也可以在contracts/Autoglyph.sol中调整draw函数的逻辑，以测试不同逻辑如何生成不同的图形。
 
+![](./sample.png)
